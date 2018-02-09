@@ -48,7 +48,7 @@ n = size(mat,1);
 % JOB = 6 means analysis+facto+solve
 id.JOB = 6;
 id.ICNTL(6) = 0;
-% we set the rigth hand side
+% we set the right hand side
 id.RHS = ones(size(mat,1),1);
 %call to mumps
 id = zmumps(id,mat);

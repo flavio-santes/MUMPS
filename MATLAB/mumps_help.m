@@ -34,7 +34,7 @@
 %
 % - id.UNS\_PERM: column permutation (if any) on exit from the analysis phase of MUMPS (see discussion regarding ICNTL(6) in Section ``Control parameters'' of the MUMPS user's guide ).
 %
-% - id.SOL: dense vector or matrix containing the solution after MUMPS solution phase.
+% - id.SOL: dense vector or matrix containing the solution after MUMPS solution phase. Also contains the nullspace in case of null space computation, or entries of the inverse, in case of computation of inverse entries.
 %
 %--------------- Internal Parameters ---------------
 %
