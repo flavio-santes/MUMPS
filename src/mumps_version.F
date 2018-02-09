@@ -1,9 +1,9 @@
 C
-C  This file is part of MUMPS 5.0.2, released
-C  on Fri Jul 15 09:12:54 UTC 2016
+C  This file is part of MUMPS 5.1.1, released
+C  on Mon Mar 20 14:34:33 UTC 2017
 C
 C
-C  Copyright 1991-2016 CERFACS, CNRS, ENS Lyon, INP Toulouse, Inria,
+C  Copyright 1991-2017 CERFACS, CNRS, ENS Lyon, INP Toulouse, Inria,
 C  University of Bordeaux.
 C
 C  This version of MUMPS is provided to you free of charge. It is
@@ -14,9 +14,9 @@ C
       IMPLICIT NONE
       CHARACTER(LEN=*) :: VERSION_STR
       CHARACTER(LEN=*) :: V;
-      PARAMETER (V = "5.0.2" )
-      IF ( len(V) .GT. 25 ) THEN
-         WRITE(*,*) "Version string too long ( >25 characters )"
+      PARAMETER (V = "5.1.1" )
+      IF ( len(V) .GT. 30 ) THEN
+         WRITE(*,*) "Version string too long ( >30 characters )"
          CALL MUMPS_ABORT()
       END IF
       VERSION_STR = V
